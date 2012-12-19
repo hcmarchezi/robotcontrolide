@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<gz:world xmlns:gz='&quot;http://playerstage.sourceforge.net/gazebo/xmlschema/#gz&quot;' xmlns:model='&quot;http://playerstage.sourceforge.net/gazebo/xmlschema/#model&quot;' xmlns:sensor='&quot;http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor&quot;' xmlns:window='&quot;http://playerstage.sourceforge.net/gazebo/xmlschema/#window&quot;' xmlns:param='&quot;http://playerstage.sourceforge.net/gazebo/xmlschema/#params&quot;' xmlns:ui='&quot;http://playerstage.sourceforge.net/gazebo/xmlschema/#params&quot;'>
+    <model:LightSource>
+        <ambientColor>0.200 0.200 0.200 1.000</ambientColor>
+        <diffuseColor>0.800 0.800 0.800 1.000</diffuseColor>
+        <id>light</id>
+        <specularColor>0.200 0.200 0.200 1.000</specularColor>
+        <xyz>2.000 -2.000 10.000</xyz>
+    </model:LightSource>
+    <model:GroundPlane>
+        <color>0.000 0.500 0.000 1.000</color>
+        <id>ground</id>
+        <xyz>-0.100 0.545 0.000</xyz>
+    </model:GroundPlane>
+    <model:SimpleSolid>
+        <color>0.000 0.000 1.000 1.000</color>
+        <id>wall1</id>
+        <shape>box</shape>
+        <size>5.000 0.500 4.000</size>
+        <xyz>1.593 1.169 0.000</xyz>
+    </model:SimpleSolid>
+    <model:SimpleSolid>
+        <color>1.000 0.000 0.000 1.000</color>
+        <id>wall2</id>
+        <shape>box</shape>
+        <size>0.500 5.000 4.000</size>
+        <xyz>-1.169 -1.552 0.000</xyz>
+    </model:SimpleSolid>
+    <model:SimpleSolid>
+        <color>0.700 0.700 0.700 1.000</color>
+        <id>sphere</id>
+        <shape>sphere</shape>
+        <xyz>-0.383 0.323 0.000</xyz>
+    </model:SimpleSolid>
+    <model:Pioneer2DX>
+        <id>robot1</id>
+        <xyz>0.851 -0.810 0.302</xyz>
+        <model:SickLMS200>
+            <id>sick</id>
+        </model:SickLMS200>
+    </model:Pioneer2DX>
+    <model:ObserverCam>
+        <id>observer</id>
+        <imageSize>320 320</imageSize>
+        <rpy>0.000 9.010 133.268</rpy>
+        <xyz>2.448 -2.710 1.000</xyz>
+    </model:ObserverCam>
+</gz:world>
